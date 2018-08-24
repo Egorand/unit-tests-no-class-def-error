@@ -1,0 +1,18 @@
+apply plugin: 'com.android.application'
+
+android {
+  compileSdkVersion 28
+  defaultConfig {
+    applicationId "com.squareup.unittestsnoclassdeffounderror"
+    minSdkVersion 21
+    targetSdkVersion 28
+    versionCode 1
+    versionName "1.0"
+  }
+}
+
+dependencies {
+  implementation 'com.android.support:appcompat-v7:28.0.0-rc01'
+  testImplementation project(':testutils')
+  testImplementation 'junit:junit:4.12'
+}
